@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+body {
+  background: #1FA2FF;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #A6FFCB, #12D8FA, #1FA2FF);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #A6FFCB, #12D8FA, #1FA2FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: white;
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+}
+header {
+  font-size: 2rem;
+}
+h1{
+  text-shadow: 5px 5px 5px rgb(11, 91, 156)
+}
+header,
+form {
+  min-height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+form input ,
+form button {
+  padding: 0.5rem;
+  font-size: 2rem;
+  border: none;
+  background: white;
+  box-shadow: 5px 5px 10px rgb(11, 91, 156)
+}
+form button {
+  color: rgba(0, 89, 206, 0.952);
+  background: #f7fffe;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+form button:hover {
+  background:rgb(11, 91, 156);
+  color: white;
+}
+.todo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.todo-list {
+  min-width: 30%;
+  list-style: none;
+  
+}
+
+.todo {
+  margin: 0.5rem;
+  background: white;
+  font-size: 1.5rem;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 1s ease;
+  box-shadow: 5px 5px 10px rgb(11, 91, 156);
+}
+.filter-todo {
+  padding: 1rem;
+}
+.todo li {
+  flex: 1;
+}
+
+.trash-btn,
+.complete-btn {
+  background: rgb(2, 36, 228);
+  color: white;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.complete-btn {
+  background: rgb(1, 211, 159);
+}
+.todo-item {
+  padding: 0rem 0.5rem;
+  
+}
+
+.fa-trash,
+.fa-check {
+  pointer-events: none;
+}
+
+.fall {
+  transform: translateY(10rem) rotateZ(20deg);
+  transition: 1s transform 0.2s opacity;
+  opacity: 0;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+/*CUSTOM SELECTOR */
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: button;
+  outline: none;
+  background-image: none;
+}
+
+/* Custom Select */
+.select {
+  margin: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+select {
+  color:rgba(0, 89, 206, 0.952);
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  width: 12rem;
+  padding: 0%;
+  font-size: medium;
+  font-weight: bold;
+}
+option{
+  font-size: medium;
+  font-weight: bold;
+  outline: none;
+}
+/* Arrow */
+.select::after {
+  content: "\25BC";
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1rem;
+  background: rgb(24, 100, 240);
+  cursor: pointer;
+  pointer-events: none;
+}
+/* Transition */
+
+
