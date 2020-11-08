@@ -28,14 +28,15 @@ function App (){
           break;
       }
     }
+    const setLocalTodos = () => {
+      localStorage.setItem('todos', JSON.stringify(todos));
+  }
+
     // eslint-disable-next-line react-hooks/exhaustive-deps
     filterHandler();
     setLocalTodos();
   },[todos,status])
 
-  const setLocalTodos = () => {
-      localStorage.setItem('todos', JSON.stringify(todos));
-  }
 
   const getLocalTodos = () => {
     if(localStorage.getItem('todos')===null){
