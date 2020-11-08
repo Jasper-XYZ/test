@@ -28,7 +28,7 @@ function App (){
           break;
       }
     }
-    //Call the function
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     filterHandler();
     setLocalTodos();
   },[todos,status])
